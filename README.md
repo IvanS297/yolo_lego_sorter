@@ -1,30 +1,5 @@
 # yolo_lego_sorter
-![alt text](scheme.png)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+![img](scheme.png)
 
 # Описание проекта
   Железо:

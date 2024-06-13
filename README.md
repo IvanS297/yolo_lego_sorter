@@ -26,7 +26,7 @@
   10. Убедившись что предыдущие шаги были выполнены, запустить файл yolo_predict.py (перед этим надо подключить Web-камеру с разрешением не мение чем 480p)
 Также если вы начинающий есть статья о том как правильно всё установить https://alexgyver.ru/arduino-first/n
 
-![img](src/schemes/bit_of_arduino_code.PNG)
+![img](src/schemes/bit of arduino code.PNG)
 
 Разбор файлов .conf:
    1. serial.conf:

@@ -56,35 +56,35 @@
   1. image_actions.py:
      Подключаются библиотеки cv2 и ConfigParser.
      Дальше идут три функции:
-       resize_img(input_img) - функция для сжатия изображения по scale_percent. Аргумент input_img - изображения для махинаций.
-       img_to_gray(inoput_img) - функция для перевода цветного изображения в серо-чёрно-белое.
-       img_to_binary(input_img) - функция для перевода из серо-чёрно-белого изображения в только чёрно-белое (это помогло мне уменьшить количество фотогорафий в датасете, а также скорость распознавания деталей)
+       1. resize_img(input_img) - функция для сжатия изображения по scale_percent. Аргумент input_img - изображения для махинаций.
+       2. img_to_gray(inoput_img) - функция для перевода цветного изображения в серо-чёрно-белое.
+       3. img_to_binary(input_img) - функция для перевода из серо-чёрно-белого изображения в только чёрно-белое (это помогло мне уменьшить количество фотогорафий в датасете, а также скорость распознавания деталей)
   2. serial_control.py:
      Подключаются три библиотеки: serial, ConfigParser, getLogger.
      Дальше идут важные функции и обьекты:
-       serial_connection - создание COM подключению к Arduino.
-       ClosePort() - функция, закрывающая COM подключение.
-       serialSend(data) - функция, отправляющая сообщение data[1] по ключу data[0]. Параметр data имеет тип list
-       onRead() - функция, которая читает данные с COM порта - занимается парсингом по ключам.
+       1. serial_connection - создание COM подключению к Arduino.
+       2. ClosePort() - функция, закрывающая COM подключение.
+       3. serialSend(data) - функция, отправляющая сообщение data[1] по ключу data[0]. Параметр data имеет тип list
+       4. onRead() - функция, которая читает данные с COM порта - занимается парсингом по ключам.
   3. steppers.py:
      Подключаются четыре библиотеки: configparser, 
      Дальше идут Два класса:
-       Rotate_Stepper(object) - класс для вращающего шагового двигателя. Под object Rotate_Stepper принимает Сдвигающий шаговый двигатель. Такде есть несколько важных функций:
-          delta_deg(beg, end) - расчитывает кротчайший путь от текущей позиции вращающего шагового двигателя до заданной.
-          rotate(data) - поворачивает шаговый двигатель
-       Move_Stepper - класс для сдвигающего шагового двигателя. Используется в классе Rotate_Stepper.
+       1. Rotate_Stepper(object) - класс для вращающего шагового двигателя. Под object Rotate_Stepper принимает Сдвигающий шаговый двигатель. Такде есть несколько важных функций:
+          1. delta_deg(beg, end) - расчитывает кротчайший путь от текущей позиции вращающего шагового двигателя до заданной.
+          2. rotate(data) - поворачивает шаговый двигатель
+       2. Move_Stepper - класс для сдвигающего шагового двигателя. Используется в классе Rotate_Stepper.
   4. Подключаются библиотеки: os, threading, logging, cv2, ultalytics
-     Есть одна очень важная функция main_loop - функция обработки изображения с камеры и распознавания.
-     В блоке if __name__ == "__main__": запускаются два потока - считывания и распонавания изображений и считыванием данных из COM порта.
+     1. Есть одна очень важная функция main_loop - функция обработки изображения с камеры и распознавания.
+     2. В блоке if __name__ == "__main__": запускаются два потока - считывания и распонавания изображений и считыванием данных из COM порта.
 
 Библиотеки в проекте:
-  GyverStepper.h - https://alexgyver.ru/gyverstepper/
-  GyverOLED.h - https://alexgyver.ru/lessons/gyverlibs/
-  Parser.h - (библиотека должна быть с файлом .ino) https://github.com/AlexGyver/tutorials/blob/master/processingSerial/blank/serialArduBlank/Parser.h
-  AsyncStream.h - (библиотека должна быть с файлом .ino) https://github.com/GyverLibs/AsyncStream
+  1. GyverStepper.h - https://alexgyver.ru/gyverstepper/
+  2. GyverOLED.h - https://alexgyver.ru/lessons/gyverlibs/
+  3. Parser.h - (библиотека должна быть с файлом .ino) https://github.com/AlexGyver/tutorials/blob/master/processingSerial/blank/serialArduBlank/Parser.h
+  4. AsyncStream.h - (библиотека должна быть с файлом .ino) https://github.com/GyverLibs/AsyncStream
 
 Дополнительная информация:
-  Мой YouTube канал - https://www.youtube.com/channel/UC8cQtZ49KFYy3E-_9oM-eKg
-  Мой Rutube канал - https://rutube.ru/channel/32348332/
-  Можешь стать моим бустером - https://boosty.to/attermiter
-  Источник уроков - https://alexgyver.ru
+  1. Мой YouTube канал - https://www.youtube.com/channel/UC8cQtZ49KFYy3E-_9oM-eKg
+  2. Мой Rutube канал - https://rutube.ru/channel/32348332/
+  3. Можешь стать моим бустером - https://boosty.to/attermiter
+  4. Источник уроков - https://alexgyver.ru

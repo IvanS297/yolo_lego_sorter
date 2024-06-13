@@ -16,7 +16,7 @@ console = StreamHandler()
 console.setLevel(INFO)
 basicConfig(level=DEBUG, format=FORMAT, handlers=[file_handler])
 
-MODEL_PATH = "src/models/trained/lego_model.pt"
+MODEL_PATH = "src/model/lego_model.pt"
 model = YOLO(model=MODEL_PATH)
 
 PHOTO_COUNTER = 0

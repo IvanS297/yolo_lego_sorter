@@ -44,13 +44,13 @@
       3. bright - яркость белого цвета.
       4. a и b менять не нужно.
    4. degrees.conf:
-      1. brick = 0                    \
-      2. plate = 45                   |
-      3. technic_pin_connector = 90   |
-      4. technic_pin = 135            > - количество градусов для каждой детальки.
-      5. vehicle_mudguard = 180       |
-      6. gear = 225                   |
-      7. (no_detections) = 270        /
+      1. brick = 0                    
+      2. plate = 45                  
+      3. technic_pin_connector = 90   
+      4. technic_pin = 135            
+      5. vehicle_mudguard = 180       
+      6. gear = 225                   
+      7. (no_detections) = 270  
       8. step - шаг (разница между двумя любыми последовательными деталями в списке).
       9. seconds_per_step - за сколько секунд прокручивается один шаг.
       10. seconds_per_move - за сколько секунд сдвигается деталька с предметного столика.

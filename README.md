@@ -1,6 +1,6 @@
 # yolo_lego_sorter
-![img](scheme.png)
-![img](webcam.jpg)
+![img](src/schemes/scheme.png)
+![img](src/schemes/webcam.jpg)
 
 # Описание проекта
 Железо:

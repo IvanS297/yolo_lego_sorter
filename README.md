@@ -89,7 +89,7 @@
 "logger.info()" и "logger.debug" на print()
 
 Файл data.log выглядет вот так (Скриншот с Raspberry pi):
-[img](src/schemes/20240613_13h06m54s_grim.png)
+![img](src/schemes/20240613_13h06m54s_grim.png)
 
 Библиотеки в проекте:
   1. GyverStepper.h - https://alexgyver.ru/gyverstepper/

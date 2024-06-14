@@ -30,7 +30,7 @@
 
 ![img](src/schemes/20240613_08h19m03s_grim.png)
 
-![img](src_schemes/20240613_08h21m31s_grim.png)
+![img](src/schemes/20240613_08h21m31s_grim.png)
 
 ![img](src/schemes/bit_of_arduino_code.PNG)
 
